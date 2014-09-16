@@ -1,0 +1,23 @@
+.btn
+	background-color: $btn-c
+	text-transform: uppercase
+	display: inline-block
+	font-family: $Sans_b
+	font-size: 12px
+	line-height: 12px
+	padding: 12px 0 
+	text-align: center
+	color: #FFF  	
+	+transition
+	&:hover
+		background-color: lighten($btn-c, 10%) 
+	&:active
+		+transform(scale(0.9))
+	+r(tablet)
+		font-size: 10px
+		line-height: 10px	
+		padding: 6px 0 	 
+.btn-mod
+	background-color: $btn_mod-c
+	&:hover
+		background-color: lighten($btn_mod-c, 10%)	 

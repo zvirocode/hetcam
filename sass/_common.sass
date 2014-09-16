@@ -1,0 +1,39 @@
+$default-transition-duration: 0.3s
+a
+	text-decoration: none	
+body,a
+	font-family: $Myriad
+	color: #000 		
+.wrap
+	width: 100%
+	min-width: 320px
+	height: 100%
+	background-color: #fff
+.container
+	margin: 0 auto
+	max-width: 1170px
+	+box
+	+r(tablet)
+		max-width: 768px
+	+r(mobile)
+		min-width: 320px	
+
+.error
+	display: block
+	margin-bottom: 20px
+
+.popup-ok, .popup-ok2, .popup-ok3, .popup-ok4
+	display: none
+	margin-bottom: 20px
+	&.is-active
+		display: block
+
+.popup-ok4	
+	clear: both
+	margin-top: 20px
+	&.is-active
+		display: inline-block
+.popup__label
+	display: inline-block
+		
+	
